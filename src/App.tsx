@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style.css'
+import SocialMedia from './components/SocialMedia'
+import Links from './components/Links'
+
+import profile from './assets/profile.svg'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <main>
+          <div className="profile">
+            <img src={profile} alt="Foto de Perfil" />
+            <span className="nome">Caynan Alves</span>
+            <span className="subtitulo">Front-end developer</span>
+            <span className="acompanhe">Acompanhe meu trabalho ✌🏼</span>
+          </div>
+          <section className="container">
+            <SocialMedia />
+            <Links />
+          </section>
+        </main>
     </div>
   );
 }
-
 export default App;
+
+
